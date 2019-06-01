@@ -109,7 +109,7 @@ ushort resolveSudoku(ushort **sudoku, ushort row, ushort col) {
 			if (numeroDisponivel(sudoku, row, col, numero)) {
 				sudoku[row][col] = numero;
 				// Procuro em profundidade todas as hipoteses com este numero
-				printf("[%hu][%hu]%hu\n", row, col, numero);
+				//printf("[%hu][%hu]%hu\n", row, col, numero);
 				if (resolveSudoku(sudoku, row, col)) {
 					// Encontrei uma solução com este valor
 					return 1;
